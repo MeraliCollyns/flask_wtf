@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        <p>{{ form.numer_dokumentu.label }} {{ form.numer_dokumentu() }}</p>
+        <p>{{ form.nazwa_dokumentu.label }} {{ form.nazwa_dokumentu(size=32) }}</p>
+        <p>{{ form.komorka_organizacyjna.label }} {{ form.komorka_organizacyjna() }}</p>
+        <p>{{ form.submit_button() }}</p>
+    </form>
+</body>
+</html>
